@@ -1,26 +1,68 @@
 <!DOCTYPE html>
 <html lang="pt-br" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Login Instagram</title>
-  </head>
-  <body>
-    <main class="conteudo-principal">
-      <section class="foto-celular">
 
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="_css/estilo.css">
+  <title>Login Instagram</title>
+</head>
+
+<body>
+  <!-- Inicio conteudo principal -->
+  <main class="conteudo-principal">
+    <section class="foto-celular">
+      <img src="_imagens/instagram.png" alt="Foto celular Instagram">
+    </section>
+  </main>
+  <!-- Fim conteudo principal -->
+
+  <!-- Inicio conteudo lateral -->
+  <aside class="conteudo-lateral">
+    <!-- Inicio área de login, esqueceu senha e logar com facebook -->
+    <section class="conteudo-lateral-login caixa">
+      <section class="login-logout">
+        <h1 class="texto-instagram">Instagram</h1>
+        <img src="_imagens/perfil-instagram.jpg" alt="Foto perfil" class="foto-perfil">
+        <input type="text" name="text-login" id="text-login" placeholder="Phone number, username or e-mail" value="">
+        <input type="password" name="text-password" id="text-password" placeholder="Password">
+        <button type="button" disabled name="button" class="btn-login">Log In</button>
+
+        <!-- Área de opção de login -->
+        <div class="opcao-login">
+          <hr>
+          <span>OR</span>
+          <hr>
+        </div>
+
+        <div class="login-facebook">
+          <!-- <img src="_imagens/icone-facebook.png" alt="Icone Facebook"> -->
+          <a href="#" class="login-facebook-link"><img src="_imagens/icone-facebook.png" alt="Icone Facebook"> <p>Login com o Facebook</p></a>
+        </div>
+
+        <a href="#" class="recuperar-senha">Esqueceu sua senha?</a>
       </section>
+    </section>
+    <!-- Fim da área de login, esqueceu senha e logar com facebook -->
 
-      <section class="login">
+    <!-- Inicio área sair da conta/sign-up -->
+    <section class="area-lateral-sign-up caixa">
+      <!-- Não é o usuario -->
+     
+        <h3>Não é a sua conta?</h3>
+        <a href="#">Sign up</a>
+      
+    </section>
+    <!-- Fim área sair da conta/sign-up-->
 
-      </section>
+    <!-- Inicio área obter aplicativos -->
+    <section class="obter-app">
+      <h2>Obter app</h2>
+      <a href=""><img src="_imagens/apple-button.png" alt="Icone AppStore"></a>
+      <a href=""><img src="_imagens/googleplay-button.png" alt="Icone GooglePlay"></a>
+    </section>
+    <!-- Fim área obter aplicativos -->
+  </aside>
+  <!-- Fim conteudo lateral -->
+</body>
 
-      <section class="logout">
-
-      </section>
-
-      <section class="obter-app">
-
-      </section>
-    </main>
-  </body>
 </html>
