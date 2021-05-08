@@ -1,4 +1,4 @@
-# Projeto  Clone  Login Instragam
+# Projeto  Clone  Login Instagram
 
  ## Escopo
 
@@ -7,8 +7,4 @@ Reconstruir a página inicial de login do instragam, utilizando os conceitos abo
 Utilizando:
 
 - css
-
 - Flexbox
-
-  
-
