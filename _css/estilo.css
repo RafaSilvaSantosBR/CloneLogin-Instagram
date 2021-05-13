@@ -1,183 +1,94 @@
-@charset "utf-8";
-@import url('https://fonts.googleapis.com/css2?family=Norican&display=swap');
-/* Formatações gerais */
 html, body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 14px;
 }
 a {
   text-decoration: none;
-  text-align: center;
 }
-input, button {
-  margin-bottom: 10px;
-}
-input:nth-child(1) {
-  margin-top: -100px;
-}
-aside img {
-  width: 100px;
-}
-
-/* Distribuindo os elementos principal e lateral lado a lado */
-body {
-  margin: 15px auto;
-  width: 50%;
-  display: flex;
-  justify-content: space-between;
-}
-
-/* Formatando o conteudo lateral */
-aside.conteudo-lateral {
-  display: flex;
-  flex-direction: column;
-}
-.caixa {
-  border: 1px solid white;
-  box-shadow: .1em .1em 1em black;
-  margin: 5px 0;
-  border-radius: 14px;
-}
-
-.conteudo-lateral-login {  
-  width: 25vw;
-  height: 55vh;  
-}
-/* Área de login e logout */
-.login-logout {
-  width: 22vw;
-  height: 31vh;
-  margin: 15px auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly; 
-  /* align-items: center; */
-}
-.texto-instagram {
-  font-family: 'Norican', cursive;
-  font-size: 2.5em;
-  text-align: center;
-  margin-top: 150px;
-}
-.opcao-login {
-  display: flex;
-  margin-bottom: 5px;
-}
-.opcao-login hr {
-  border: 1px solid rgba(0, 0, 0, 0.065);
-  background: rgba(0, 0, 0, 0.065);
-  width: 40%;
-}
-
-.btn-login {
-  background:rgba(41, 128, 185, 0.897);
-  color: #fff;
-  font-size: 1em;
-  border-radius: .5em;
-  margin: 5px 0 5px;
-}
-.btn-login[disabled] {
-  background: rgba(41, 127, 185, 0.281);
-}
-
-.login-facebook {
-  margin: 5px auto;
+.container-main {
+  width: 55vw;
+  min-height: 100vh;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
-.login-facebook-link {  
+
+.container-lateral { 
+  min-width: 400px;
+  height: 63vh;
+}
+
+.flex-container {
   display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  color: rgb(19, 19, 223);
-  font-weight: bolder;
-  justify-content: space-evenly; 
-  font-size: .7em; 
-}
-.login-facebook img {
-  width: 1.5em;
-  padding-right: 4px;
-}
-.recuperar-senha {
-  font-size: .8em;
+  margin-bottom: 10px;
 }
 
-/* Área lateral não é sua conta */
-.area-lateral-sign-up {
-  text-align: center;
-  padding: 1.5em 0 ; 
-  
-}
-.area-lateral-sign-up h3 {
-  display: inline;
-  font-weight: lighter;
-  font-size: .9em;
-}
-.area-lateral-sign-up a {
-  font-size: .9em;
-}
-
-/* Obter aplicaticos */
-.obter-app {
-  text-align: center;
-}
-.obter-app h2 {
-  font-weight: lighter;
-}
 .foto-perfil {
+  display: flex;
+  justify-content: cen901ter;
+}
+.foto-perfil img {
+  width: 150px;
   border-radius: 50%;
-  margin: -50px auto 10px auto;
-  text-align: center;;
 }
-/* Media queries */
-@media(min-width: 768px) {
-  body {
-    width: 50%;
-  }
+.group {
+  width: 80%;
+  border: 1px solid white;
+  box-shadow: .1em .1em 1em black;
+  border-radius: 10px;
 }
-@media(max-width: 875px) {
-  img {
-    width: 50px;
-  }
- 
-  .conteudo-principal .foto-celular {
+
+.login {
+  height: 62%;
+}
+
+/* Botões e links */
+.btn-continue {
+  background: rgba(106, 150, 231, 0.651);
+  color: white;
+  padding: .6em;
+  border-radius: 20px;
+  font-size: 1.2em;
+}
+
+.link-blue {
+  color: rgb(29, 112, 206);
+}
+
+.obter-app {
+  width: 85%;
+  height: 10vh;
+  font-size: 1.2em;
+}
+
+.obter-app .download img {
+  width: 150px;
+}
+
+ @media(max-width: 965px) {
+  .foto-celular {
     display: none;
   }
-  .caixa {
-    width: 60vw;
-    border: .1 solid white;
-    box-shadow: .1em .1em 1em black;
-    margin: 0px auto 20px auto;
+  .group {
+    border:  none;
+    box-shadow: none;
   }
-  .conteudo-lateral {    
-    width: 60vw;
-    height: 95vh;
-    margin: 0 auto;
-    /* border: 1px solid red; */
+  .container-main {
+    width: 100vw;
   }
-  
-  .conteudo-lateral-login {  
-    width: 60vw;
-    height: 85vh;;
-    /* margin: 0 auto; */
-  }
-  .login-logout { 
-    width: 50vw;
-    height: 60vh;
+}
+@media(min-width: 966px) and (max-width: 1400px) {
+  .container-main {   
+    width: 90vw;
     display: flex;
-    flex-direction: column;
-    justify-items: flex-end;
-  }
-  .texto-instagram {
-    font-size: 2.2em;
-    margin: 0;
-    padding: 0;
-  }
-  input {
-    padding: 20px;
-  }
-  .btn-login {
-    font-size: 1.2em;
+    align-items: center;
+    justify-content: space-evenly;
   }
 }
